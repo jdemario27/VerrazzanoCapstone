@@ -3,15 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		175769DBAC850D165450694E /* Pods_VerrazzanoCapstoneProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E58B8DEE7413A7EA61AA98 /* Pods_VerrazzanoCapstoneProjectTests.framework */; };
-		2CABC47874E1D5CBCCF9DF69 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983B512970D198AB99847978 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */; };
+		2B9617D4B32960A9D03235A6 /* Pods_VerrazzanoCapstoneProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D42A5724F7606C8BDB648 /* Pods_VerrazzanoCapstoneProjectTests.framework */; };
 		3006B29B27B3A18900E9F1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B29A27B3A18900E9F1BC /* AppDelegate.swift */; };
 		3006B29D27B3A18900E9F1BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B29C27B3A18900E9F1BC /* SceneDelegate.swift */; };
-		3006B29F27B3A18900E9F1BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B29E27B3A18900E9F1BC /* ViewController.swift */; };
 		3006B2A227B3A18900E9F1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3006B2A027B3A18900E9F1BC /* Main.storyboard */; };
 		3006B2A427B3A18C00E9F1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3006B2A327B3A18C00E9F1BC /* Assets.xcassets */; };
 		3006B2A727B3A18C00E9F1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3006B2A527B3A18C00E9F1BC /* LaunchScreen.storyboard */; };
@@ -19,8 +17,29 @@
 		3006B2BD27B3A18D00E9F1BC /* VerrazzanoCapstoneProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B2BC27B3A18D00E9F1BC /* VerrazzanoCapstoneProjectUITests.swift */; };
 		3006B2CB27B4874900E9F1BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B2CA27B4874900E9F1BC /* LoginViewController.swift */; };
 		3006B2CD27B4876500E9F1BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B2CC27B4876500E9F1BC /* FeedViewController.swift */; };
-		306E27D127B4A04D003464E8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E27D027B4A04D003464E8 /* RegisterViewController.swift */; };
-		32B871AF828C67CB9DA4CB2E /* Pods_VerrazzanoCapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C88B0EED660AD7A18481250 /* Pods_VerrazzanoCapstoneProject.framework */; };
+		309DD73C27C98A8E00E44368 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD73B27C98A8E00E44368 /* MainViewController.swift */; };
+		309DD73E27C98AD800E44368 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD73D27C98AD800E44368 /* ComingSoonViewController.swift */; };
+		309DD74027C98AFE00E44368 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD73F27C98AFE00E44368 /* FilterViewController.swift */; };
+		309DD74227C98B2B00E44368 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD74127C98B2B00E44368 /* FavoritesViewController.swift */; };
+		309DD74427C9932D00E44368 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD74327C9932D00E44368 /* CollectionTableViewCell.swift */; };
+		309DD74627C9998200E44368 /* MovieHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD74527C9998200E44368 /* MovieHeaderView.swift */; };
+		309DD74827CC1B2A00E44368 /* MovieAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD74727CC1B2A00E44368 /* MovieAPICaller.swift */; };
+		309DD74A27CC1F1F00E44368 /* MovieTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD74927CC1F1F00E44368 /* MovieTitle.swift */; };
+		309DD74C27CC22A600E44368 /* Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD74B27CC22A600E44368 /* Extend.swift */; };
+		309DD75027CC2CEA00E44368 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD74F27CC2CEA00E44368 /* TitleCollectionViewCell.swift */; };
+		309DD75327CC2EA100E44368 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 309DD75227CC2EA100E44368 /* SDWebImage */; };
+		309DD75527CC2EA100E44368 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 309DD75427CC2EA100E44368 /* SDWebImageMapKit */; };
+		309DD75727CDC9AE00E44368 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD75627CDC9AE00E44368 /* TitleTableViewCell.swift */; };
+		309DD75927CDCD1200E44368 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD75827CDCD1200E44368 /* TitleViewModel.swift */; };
+		309DD75B27CDD68E00E44368 /* FilterResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD75A27CDD68E00E44368 /* FilterResultsViewController.swift */; };
+		309DD75D27D04C3200E44368 /* YouTubeSearchResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD75C27D04C3100E44368 /* YouTubeSearchResp.swift */; };
+		309DD75F27D0513800E44368 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD75E27D0513800E44368 /* TrailerViewController.swift */; };
+		309DD76127D0551300E44368 /* TrailerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD76027D0551300E44368 /* TrailerViewModel.swift */; };
+		309DD7A327D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7A127D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld */; };
+		309DD7A527D2E5C300E44368 /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7A427D2E5C300E44368 /* DataPersistenceManager.swift */; };
+		309DD7B027D58DD200E44368 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7AF27D58DD200E44368 /* MessagesViewController.swift */; };
+		32B3A36213A36FF9FA98727A /* Pods_VerrazzanoCapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF83EDD3F8A9DA8284A73E5D /* Pods_VerrazzanoCapstoneProject.framework */; };
+		D6C1F9B289B837251810DE01 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D55613A888736AA2451227 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065E6231E718D7630D3D7EF7 /* Pods-VerrazzanoCapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
 		3006B29727B3A18900E9F1BC /* VerrazzanoCapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerrazzanoCapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3006B29A27B3A18900E9F1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3006B29C27B3A18900E9F1BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3006B29E27B3A18900E9F1BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3006B2A127B3A18900E9F1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3006B2A327B3A18C00E9F1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3006B2A627B3A18C00E9F1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,16 +76,33 @@
 		3006B2BE27B3A18D00E9F1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3006B2CA27B4874900E9F1BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3006B2CC27B4876500E9F1BC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		306E27D027B4A04D003464E8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		39CF8CCABBBBC293804FD61A /* Pods-VerrazzanoCapstoneProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject.release.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject.release.xcconfig"; sourceTree = "<group>"; };
-		61E58B8DEE7413A7EA61AA98 /* Pods_VerrazzanoCapstoneProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7155037CB9F02FD5A1751F4F /* Pods-VerrazzanoCapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
-		983B512970D198AB99847978 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C88B0EED660AD7A18481250 /* Pods_VerrazzanoCapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBE7A1EDF8235476983095A4 /* Pods-VerrazzanoCapstoneProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProjectTests.release.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProjectTests/Pods-VerrazzanoCapstoneProjectTests.release.xcconfig"; sourceTree = "<group>"; };
-		D6913F2CB9067328B03849D2 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E5FA730FB0D111B02DE9E03C /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F687B3DDFFF04740C7D4583F /* Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProjectTests/Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		309DD73B27C98A8E00E44368 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		309DD73D27C98AD800E44368 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
+		309DD73F27C98AFE00E44368 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		309DD74127C98B2B00E44368 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		309DD74327C9932D00E44368 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		309DD74527C9998200E44368 /* MovieHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHeaderView.swift; sourceTree = "<group>"; };
+		309DD74727CC1B2A00E44368 /* MovieAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPICaller.swift; sourceTree = "<group>"; };
+		309DD74927CC1F1F00E44368 /* MovieTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTitle.swift; sourceTree = "<group>"; };
+		309DD74B27CC22A600E44368 /* Extend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extend.swift; sourceTree = "<group>"; };
+		309DD74F27CC2CEA00E44368 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		309DD75627CDC9AE00E44368 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		309DD75827CDCD1200E44368 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		309DD75A27CDD68E00E44368 /* FilterResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterResultsViewController.swift; sourceTree = "<group>"; };
+		309DD75C27D04C3100E44368 /* YouTubeSearchResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSearchResp.swift; sourceTree = "<group>"; };
+		309DD75E27D0513800E44368 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
+		309DD76027D0551300E44368 /* TrailerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewModel.swift; sourceTree = "<group>"; };
+		309DD7A227D2E3A800E44368 /* CapstoneProjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CapstoneProjectModel.xcdatamodel; sourceTree = "<group>"; };
+		309DD7A427D2E5C300E44368 /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
+		309DD7AF27D58DD200E44368 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		4F8D42A5724F7606C8BDB648 /* Pods_VerrazzanoCapstoneProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D55613A888736AA2451227 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF83EDD3F8A9DA8284A73E5D /* Pods_VerrazzanoCapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B05626BCA871C15D2C4143 /* Pods-VerrazzanoCapstoneProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject.debug.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D776176845820B6F4E0CE3 /* Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProjectTests/Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7A968B3C1126B475BCA97EA /* Pods-VerrazzanoCapstoneProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProjectTests.release.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProjectTests/Pods-VerrazzanoCapstoneProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1B761F6C711D14A3DA7C1C5 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC0B450223F8FD6C8E8A2A93 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B871AF828C67CB9DA4CB2E /* Pods_VerrazzanoCapstoneProject.framework in Frameworks */,
+				309DD75327CC2EA100E44368 /* SDWebImage in Frameworks */,
+				309DD75527CC2EA100E44368 /* SDWebImageMapKit in Frameworks */,
+				32B3A36213A36FF9FA98727A /* Pods_VerrazzanoCapstoneProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				175769DBAC850D165450694E /* Pods_VerrazzanoCapstoneProjectTests.framework in Frameworks */,
+				2B9617D4B32960A9D03235A6 /* Pods_VerrazzanoCapstoneProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CABC47874E1D5CBCCF9DF69 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework in Frameworks */,
+				D6C1F9B289B837251810DE01 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +142,8 @@
 				3006B2B027B3A18D00E9F1BC /* VerrazzanoCapstoneProjectTests */,
 				3006B2BB27B3A18D00E9F1BC /* VerrazzanoCapstoneProjectUITests */,
 				3006B29827B3A18900E9F1BC /* Products */,
-				CB0D23B27B2BDFE33A38CF3B /* Pods */,
-				A2BE9B11CBDC3877146EFF6B /* Frameworks */,
+				60ABA995830107102F46C478 /* Frameworks */,
+				6234E3DDF31EEC2C98F4504F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,16 +160,30 @@
 		3006B29927B3A18900E9F1BC /* VerrazzanoCapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				309DD7AE27D58DB500E44368 /* MessagesVC */,
+				309DD7AD27D58AC300E44368 /* Models */,
+				309DD7AC27D58A0500E44368 /* FavoritesVC */,
+				309DD7AB27D589F000E44368 /* FilterVC */,
+				309DD7AA27D589BB00E44368 /* ComingSoonVC */,
+				309DD7A927D5898B00E44368 /* MainVC */,
 				3006B29A27B3A18900E9F1BC /* AppDelegate.swift */,
 				3006B29C27B3A18900E9F1BC /* SceneDelegate.swift */,
-				3006B29E27B3A18900E9F1BC /* ViewController.swift */,
 				3006B2A027B3A18900E9F1BC /* Main.storyboard */,
 				3006B2A327B3A18C00E9F1BC /* Assets.xcassets */,
 				3006B2A527B3A18C00E9F1BC /* LaunchScreen.storyboard */,
 				3006B2A827B3A18C00E9F1BC /* Info.plist */,
 				3006B2CA27B4874900E9F1BC /* LoginViewController.swift */,
 				3006B2CC27B4876500E9F1BC /* FeedViewController.swift */,
-				306E27D027B4A04D003464E8 /* RegisterViewController.swift */,
+				309DD74327C9932D00E44368 /* CollectionTableViewCell.swift */,
+				309DD74727CC1B2A00E44368 /* MovieAPICaller.swift */,
+				309DD74927CC1F1F00E44368 /* MovieTitle.swift */,
+				309DD74B27CC22A600E44368 /* Extend.swift */,
+				309DD74F27CC2CEA00E44368 /* TitleCollectionViewCell.swift */,
+				309DD75627CDC9AE00E44368 /* TitleTableViewCell.swift */,
+				309DD75C27D04C3100E44368 /* YouTubeSearchResp.swift */,
+				309DD75E27D0513800E44368 /* TrailerViewController.swift */,
+				309DD7A127D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld */,
+				309DD7A427D2E5C300E44368 /* DataPersistenceManager.swift */,
 			);
 			path = VerrazzanoCapstoneProject;
 			sourceTree = "<group>";
@@ -154,25 +206,76 @@
 			path = VerrazzanoCapstoneProjectUITests;
 			sourceTree = "<group>";
 		};
-		A2BE9B11CBDC3877146EFF6B /* Frameworks */ = {
+		309DD7A927D5898B00E44368 /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
-				9C88B0EED660AD7A18481250 /* Pods_VerrazzanoCapstoneProject.framework */,
-				983B512970D198AB99847978 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */,
-				61E58B8DEE7413A7EA61AA98 /* Pods_VerrazzanoCapstoneProjectTests.framework */,
+				309DD74527C9998200E44368 /* MovieHeaderView.swift */,
+				309DD73B27C98A8E00E44368 /* MainViewController.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		309DD7AA27D589BB00E44368 /* ComingSoonVC */ = {
+			isa = PBXGroup;
+			children = (
+				309DD73D27C98AD800E44368 /* ComingSoonViewController.swift */,
+			);
+			path = ComingSoonVC;
+			sourceTree = "<group>";
+		};
+		309DD7AB27D589F000E44368 /* FilterVC */ = {
+			isa = PBXGroup;
+			children = (
+				309DD75A27CDD68E00E44368 /* FilterResultsViewController.swift */,
+				309DD73F27C98AFE00E44368 /* FilterViewController.swift */,
+			);
+			path = FilterVC;
+			sourceTree = "<group>";
+		};
+		309DD7AC27D58A0500E44368 /* FavoritesVC */ = {
+			isa = PBXGroup;
+			children = (
+				309DD74127C98B2B00E44368 /* FavoritesViewController.swift */,
+			);
+			path = FavoritesVC;
+			sourceTree = "<group>";
+		};
+		309DD7AD27D58AC300E44368 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				309DD75827CDCD1200E44368 /* TitleViewModel.swift */,
+				309DD76027D0551300E44368 /* TrailerViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		309DD7AE27D58DB500E44368 /* MessagesVC */ = {
+			isa = PBXGroup;
+			children = (
+				309DD7AF27D58DD200E44368 /* MessagesViewController.swift */,
+			);
+			path = MessagesVC;
+			sourceTree = "<group>";
+		};
+		60ABA995830107102F46C478 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF83EDD3F8A9DA8284A73E5D /* Pods_VerrazzanoCapstoneProject.framework */,
+				86D55613A888736AA2451227 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */,
+				4F8D42A5724F7606C8BDB648 /* Pods_VerrazzanoCapstoneProjectTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB0D23B27B2BDFE33A38CF3B /* Pods */ = {
+		6234E3DDF31EEC2C98F4504F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7155037CB9F02FD5A1751F4F /* Pods-VerrazzanoCapstoneProject.debug.xcconfig */,
-				39CF8CCABBBBC293804FD61A /* Pods-VerrazzanoCapstoneProject.release.xcconfig */,
-				E5FA730FB0D111B02DE9E03C /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig */,
-				D6913F2CB9067328B03849D2 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig */,
-				F687B3DDFFF04740C7D4583F /* Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig */,
-				BBE7A1EDF8235476983095A4 /* Pods-VerrazzanoCapstoneProjectTests.release.xcconfig */,
+				B5B05626BCA871C15D2C4143 /* Pods-VerrazzanoCapstoneProject.debug.xcconfig */,
+				065E6231E718D7630D3D7EF7 /* Pods-VerrazzanoCapstoneProject.release.xcconfig */,
+				EC0B450223F8FD6C8E8A2A93 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig */,
+				E1B761F6C711D14A3DA7C1C5 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig */,
+				D5D776176845820B6F4E0CE3 /* Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig */,
+				D7A968B3C1126B475BCA97EA /* Pods-VerrazzanoCapstoneProjectTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -184,17 +287,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3006B2C127B3A18D00E9F1BC /* Build configuration list for PBXNativeTarget "VerrazzanoCapstoneProject" */;
 			buildPhases = (
-				A570B8BD7FF2B971C7153C91 /* [CP] Check Pods Manifest.lock */,
+				0683C6A9CF7DA3BA0EE0A62C /* [CP] Check Pods Manifest.lock */,
 				3006B29327B3A18900E9F1BC /* Sources */,
 				3006B29427B3A18900E9F1BC /* Frameworks */,
 				3006B29527B3A18900E9F1BC /* Resources */,
-				032947D4220E8F46921376A3 /* [CP] Embed Pods Frameworks */,
+				9FF857D25C438999FF6BBB92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = VerrazzanoCapstoneProject;
+			packageProductDependencies = (
+				309DD75227CC2EA100E44368 /* SDWebImage */,
+				309DD75427CC2EA100E44368 /* SDWebImageMapKit */,
+			);
 			productName = VerrazzanoCapstoneProject;
 			productReference = 3006B29727B3A18900E9F1BC /* VerrazzanoCapstoneProject.app */;
 			productType = "com.apple.product-type.application";
@@ -203,7 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3006B2C427B3A18D00E9F1BC /* Build configuration list for PBXNativeTarget "VerrazzanoCapstoneProjectTests" */;
 			buildPhases = (
-				96208FFBD53BED31BA768B1E /* [CP] Check Pods Manifest.lock */,
+				32F3F3299F942EB036277E9C /* [CP] Check Pods Manifest.lock */,
 				3006B2A927B3A18D00E9F1BC /* Sources */,
 				3006B2AA27B3A18D00E9F1BC /* Frameworks */,
 				3006B2AB27B3A18D00E9F1BC /* Resources */,
@@ -222,11 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3006B2C727B3A18D00E9F1BC /* Build configuration list for PBXNativeTarget "VerrazzanoCapstoneProjectUITests" */;
 			buildPhases = (
-				B2BDBF59F93988791D4AD72F /* [CP] Check Pods Manifest.lock */,
+				429DAF43B3177D5BCBD05002 /* [CP] Check Pods Manifest.lock */,
 				3006B2B427B3A18D00E9F1BC /* Sources */,
 				3006B2B527B3A18D00E9F1BC /* Frameworks */,
 				3006B2B627B3A18D00E9F1BC /* Resources */,
-				9A92F6281B87022BBED8DD49 /* [CP] Embed Pods Frameworks */,
+				F827C66DFB37E77EC4AA1CF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,7 +368,7 @@
 				};
 			};
 			buildConfigurationList = 3006B29227B3A18900E9F1BC /* Build configuration list for PBXProject "VerrazzanoCapstoneProject" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -269,6 +376,9 @@
 				Base,
 			);
 			mainGroup = 3006B28E27B3A18900E9F1BC;
+			packageReferences = (
+				309DD75127CC2EA100E44368 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 3006B29827B3A18900E9F1BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -308,63 +418,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		032947D4220E8F46921376A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96208FFBD53BED31BA768B1E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VerrazzanoCapstoneProjectTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A92F6281B87022BBED8DD49 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A570B8BD7FF2B971C7153C91 /* [CP] Check Pods Manifest.lock */ = {
+		0683C6A9CF7DA3BA0EE0A62C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,7 +440,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B2BDBF59F93988791D4AD72F /* [CP] Check Pods Manifest.lock */ = {
+		32F3F3299F942EB036277E9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VerrazzanoCapstoneProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		429DAF43B3177D5BCBD05002 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,6 +484,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9FF857D25C438999FF6BBB92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F827C66DFB37E77EC4AA1CF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -415,12 +525,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309DD74027C98AFE00E44368 /* FilterViewController.swift in Sources */,
 				3006B2CB27B4874900E9F1BC /* LoginViewController.swift in Sources */,
-				3006B29F27B3A18900E9F1BC /* ViewController.swift in Sources */,
+				309DD74A27CC1F1F00E44368 /* MovieTitle.swift in Sources */,
+				309DD75D27D04C3200E44368 /* YouTubeSearchResp.swift in Sources */,
+				309DD76127D0551300E44368 /* TrailerViewModel.swift in Sources */,
+				309DD74227C98B2B00E44368 /* FavoritesViewController.swift in Sources */,
+				309DD7B027D58DD200E44368 /* MessagesViewController.swift in Sources */,
 				3006B2CD27B4876500E9F1BC /* FeedViewController.swift in Sources */,
-				306E27D127B4A04D003464E8 /* RegisterViewController.swift in Sources */,
+				309DD74627C9998200E44368 /* MovieHeaderView.swift in Sources */,
 				3006B29B27B3A18900E9F1BC /* AppDelegate.swift in Sources */,
+				309DD74827CC1B2A00E44368 /* MovieAPICaller.swift in Sources */,
 				3006B29D27B3A18900E9F1BC /* SceneDelegate.swift in Sources */,
+				309DD75F27D0513800E44368 /* TrailerViewController.swift in Sources */,
+				309DD73E27C98AD800E44368 /* ComingSoonViewController.swift in Sources */,
+				309DD75727CDC9AE00E44368 /* TitleTableViewCell.swift in Sources */,
+				309DD75B27CDD68E00E44368 /* FilterResultsViewController.swift in Sources */,
+				309DD74427C9932D00E44368 /* CollectionTableViewCell.swift in Sources */,
+				309DD75027CC2CEA00E44368 /* TitleCollectionViewCell.swift in Sources */,
+				309DD7A327D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld in Sources */,
+				309DD75927CDCD1200E44368 /* TitleViewModel.swift in Sources */,
+				309DD73C27C98A8E00E44368 /* MainViewController.swift in Sources */,
+				309DD74C27CC22A600E44368 /* Extend.swift in Sources */,
+				309DD7A527D2E5C300E44368 /* DataPersistenceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +660,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -587,13 +715,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		3006B2C227B3A18D00E9F1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7155037CB9F02FD5A1751F4F /* Pods-VerrazzanoCapstoneProject.debug.xcconfig */;
+			baseConfigurationReference = B5B05626BCA871C15D2C4143 /* Pods-VerrazzanoCapstoneProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -612,7 +741,7 @@
 		};
 		3006B2C327B3A18D00E9F1BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39CF8CCABBBBC293804FD61A /* Pods-VerrazzanoCapstoneProject.release.xcconfig */;
+			baseConfigurationReference = 065E6231E718D7630D3D7EF7 /* Pods-VerrazzanoCapstoneProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -631,7 +760,7 @@
 		};
 		3006B2C527B3A18D00E9F1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F687B3DDFFF04740C7D4583F /* Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig */;
+			baseConfigurationReference = D5D776176845820B6F4E0CE3 /* Pods-VerrazzanoCapstoneProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -653,7 +782,7 @@
 		};
 		3006B2C627B3A18D00E9F1BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE7A1EDF8235476983095A4 /* Pods-VerrazzanoCapstoneProjectTests.release.xcconfig */;
+			baseConfigurationReference = D7A968B3C1126B475BCA97EA /* Pods-VerrazzanoCapstoneProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -675,7 +804,7 @@
 		};
 		3006B2C827B3A18D00E9F1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5FA730FB0D111B02DE9E03C /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig */;
+			baseConfigurationReference = EC0B450223F8FD6C8E8A2A93 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -695,7 +824,7 @@
 		};
 		3006B2C927B3A18D00E9F1BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6913F2CB9067328B03849D2 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig */;
+			baseConfigurationReference = E1B761F6C711D14A3DA7C1C5 /* Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -753,6 +882,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		309DD75127CC2EA100E44368 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		309DD75227CC2EA100E44368 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 309DD75127CC2EA100E44368 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		309DD75427CC2EA100E44368 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 309DD75127CC2EA100E44368 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		309DD7A127D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				309DD7A227D2E3A800E44368 /* CapstoneProjectModel.xcdatamodel */,
+			);
+			currentVersion = 309DD7A227D2E3A800E44368 /* CapstoneProjectModel.xcdatamodel */;
+			path = CapstoneProjectModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3006B28F27B3A18900E9F1BC /* Project object */;
 }

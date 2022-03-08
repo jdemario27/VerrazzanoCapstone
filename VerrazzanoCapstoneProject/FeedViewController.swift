@@ -8,12 +8,36 @@
 import UIKit
 import Parse
 
-class FeedViewController: UIViewController {
+@available(iOS 15.0, *)
+class FeedViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        
+        let mainVC = UINavigationController(rootViewController: MainViewController())
+        let comingsoonVC = UINavigationController(rootViewController: ComingSoonViewController())
+        let filterVC = UINavigationController(rootViewController: FilterViewController())
+        let favoritesVC = UINavigationController(rootViewController: FavoritesViewController())
+        let messagesVC = UINavigationController(rootViewController: MessagesViewController())
+        
+        mainVC.tabBarItem.image = UIImage(systemName: "house")
+        comingsoonVC.tabBarItem.image = UIImage(systemName: "calendar.badge.exclamationmark")
+        filterVC.tabBarItem.image = UIImage(systemName: "magnifyingglass.circle")
+        favoritesVC.tabBarItem.image = UIImage(systemName: "heart.fill")
+        messagesVC.tabBarItem.image = UIImage(systemName: "message.fill")
+        
+        mainVC.title = "Home"
+        comingsoonVC.title = "Coming Soon"
+        filterVC.title = "Find your Movie"
+        favoritesVC.title = "My Favorites"
+        messagesVC.title = "My Messages"
+        
+        tabBar.tintColor = .label
+        
+        setViewControllers([mainVC, comingsoonVC, filterVC, favoritesVC, messagesVC], animated: true)
     }
     
 
