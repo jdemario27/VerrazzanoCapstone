@@ -40,7 +40,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
                 guard let releaseDate = title?.release_date else { return }
                 guard let strongSelf = self else { return }
                 //let viewModel = TrailerViewModel(title: titleName, YouTubeView: vidEl, synopsis: synopsis)
-                let viewModel = TrailerViewModel(title: titleName, YouTubeView: vidEl, synopsis: synopsis, releaseDate: releaseDate)
+                let viewModel = TrailerViewModel(title: titleName, YouTubeView: vidEl, synopsis: synopsis, releaseDate: "Release Date: " + releaseDate)
                 self?.delegate?.CollectionViewTableViewCellDidTapCell(strongSelf, viewModel: viewModel)
             case .failure(let error):
                 print(error.localizedDescription)

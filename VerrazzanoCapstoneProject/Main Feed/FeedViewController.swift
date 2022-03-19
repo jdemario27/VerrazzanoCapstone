@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import FirebaseAuth
 
 @available(iOS 15.0, *)
 class FeedViewController: UITabBarController {
@@ -15,6 +16,8 @@ class FeedViewController: UITabBarController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        print("This is the FeedViewController")
+        
         view.backgroundColor = .systemBackground
         
         let mainVC = UINavigationController(rootViewController: MainViewController())
@@ -38,6 +41,22 @@ class FeedViewController: UITabBarController {
         tabBar.tintColor = .label
         
         setViewControllers([mainVC, comingsoonVC, filterVC, favoritesVC, messagesVC], animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        validateAuth()
+       
+    }
+    
+    private func validateAuth() {
+        if FirebaseAuth.Auth.auth().currentUser == nil {
+            let vc = LoginViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: true)
+        }
     }
     
 

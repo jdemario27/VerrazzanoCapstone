@@ -1,23 +1,20 @@
 //
-//  MessagesViewController.swift
+//  NewConversationViewController.swift
 //  VerrazzanoCapstoneProject
 //
-//  Created by Joseph  DeMario on 3/17/22.
+//  Created by Joseph  DeMario on 3/15/22.
 //
 
 import UIKit
 
-final class MessagesViewController: UIViewController {
+class NewConversationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //title = "My Messages"
-        //navigationController?.navigationBar.prefersLargeTitles = true
-        //navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
-
+    
 
     /*
     // MARK: - Navigation
