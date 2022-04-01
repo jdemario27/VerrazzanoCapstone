@@ -7,10 +7,13 @@
 
 import UIKit
 import FirebaseAuth
+import JGProgressHUD
 
 @available(iOS 15.0, *)
 class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    private let spinner = JGProgressHUD(style: .dark)
+    
     private let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.clipsToBounds = true
@@ -40,7 +43,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         field.placeholder = "Please enter your first name..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .black
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
@@ -55,7 +58,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         field.placeholder = "Please enter your last name..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .black
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
@@ -70,7 +73,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         field.placeholder = "Please enter your email address..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .black
+        field.backgroundColor = .secondarySystemBackground
         return field
     }()
     
@@ -85,7 +88,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         field.placeholder = "Please enter your password..."
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
         field.leftViewMode = .always
-        field.backgroundColor = .black
+        field.backgroundColor = .secondarySystemBackground
         field.isSecureTextEntry = true
         return field
     }()
@@ -105,7 +108,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
         super.viewDidLoad()
         
         title = "Log In"
-        view.backgroundColor = .red
+        view.backgroundColor = .systemBackground
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register", style: .done, target: self, action: #selector(didTapRegister))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.systemBlue
@@ -179,11 +182,18 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
             return
         }
         
+        spinner.show(in: view)
+        
         //Firebase login
         DatabaseManager.shared.userExists(with: email, completion: { [weak self] exists in
             guard let strongSelf = self else {
                 return
             }
+            
+            DispatchQueue.main.async {
+                strongSelf.spinner.dismiss()
+            }
+            
             guard !exists else {
                 //user already exists
                 strongSelf.alertLoginError(message: "Looks like a user account with that email address already exists!")
@@ -194,7 +204,30 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
                     print("Error creating user")
                     return
                 }
-                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email))
+                
+                let chatUser = ChatAppUser(firstName: firstName,
+                                           lastName: lastName,
+                                           emailAddress: email)
+                DatabaseManager.shared.insertUser(with: chatUser, completion: { success in
+                    if success {
+                        // upload image
+                        guard let image = strongSelf.imageView.image,
+                              let data = image.pngData() else {
+                                  return
+                              }
+                        let filename = chatUser.profilePictureFileName
+                        StorageManager.shared.uploadProfilePicture(with: data, fileName: filename, completion: { result in
+                            switch result {
+                            case .success(let downloadUrl):
+                                UserDefaults.standard.set(downloadUrl, forKey: "profile_picture_url")
+                                print(downloadUrl)
+                            case .failure(let error):
+                                print("Storage maanger error: \(error)")
+                            }
+                        })
+                    }
+                })
+                
                 strongSelf.navigationController?.dismiss(animated: true, completion: nil)
             })
         })

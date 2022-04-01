@@ -16,6 +16,9 @@
 		3006B2B227B3A18D00E9F1BC /* VerrazzanoCapstoneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B2B127B3A18D00E9F1BC /* VerrazzanoCapstoneProjectTests.swift */; };
 		3006B2BD27B3A18D00E9F1BC /* VerrazzanoCapstoneProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B2BC27B3A18D00E9F1BC /* VerrazzanoCapstoneProjectUITests.swift */; };
 		3006B2CD27B4876500E9F1BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3006B2CC27B4876500E9F1BC /* FeedViewController.swift */; };
+		305069B027EC11D10071CF46 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305069AF27EC11D10071CF46 /* ConversationTableViewCell.swift */; };
+		305069B227F13F4E0071CF46 /* NewConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305069B127F13F4D0071CF46 /* NewConversationCell.swift */; };
+		305069B427F6369C0071CF46 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305069B327F6369B0071CF46 /* LocationPickerViewController.swift */; };
 		309DD73C27C98A8E00E44368 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD73B27C98A8E00E44368 /* MainViewController.swift */; };
 		309DD73E27C98AD800E44368 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD73D27C98AD800E44368 /* ComingSoonViewController.swift */; };
 		309DD74027C98AFE00E44368 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD73F27C98AFE00E44368 /* FilterViewController.swift */; };
@@ -40,14 +43,17 @@
 		309DD7B427E168EC00E44368 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7B327E168EC00E44368 /* PhotoViewerViewController.swift */; };
 		309DD7B627E1691300E44368 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7B527E1691300E44368 /* VideoPlayerViewController.swift */; };
 		309DD7B827E1693D00E44368 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7B727E1693D00E44368 /* NewConversationViewController.swift */; };
-		309DD7BA27E1696000E44368 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7B927E1696000E44368 /* ProfileViewController.swift */; };
-		309DD7C027E3C50400E44368 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7BE27E3C50400E44368 /* MessagesViewController.swift */; };
+		309DD7C027E3C50400E44368 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7BE27E3C50400E44368 /* ConversationsViewController.swift */; };
 		309DD7C127E3C50400E44368 /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309DD7BF27E3C50400E44368 /* MessagesViewController.xib */; };
 		309DD7C427E429E700E44368 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309DD7C327E429E700E44368 /* FeedViewController.storyboard */; };
 		309DD7C627E42A4100E44368 /* DummyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7C527E42A4100E44368 /* DummyLoginViewController.swift */; };
 		309DD7C827E42CBC00E44368 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7C727E42CBC00E44368 /* LoginViewController.swift */; };
 		30B48AB227E5947300521B56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B48AB127E5947300521B56 /* GoogleService-Info.plist */; };
 		30B48AB427E5A11C00521B56 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B48AB327E5A11C00521B56 /* DatabaseManager.swift */; };
+		30B48AB927E6795E00521B56 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B48AB727E6795E00521B56 /* ProfileViewController.swift */; };
+		30B48ABA27E6795E00521B56 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B48AB827E6795E00521B56 /* ProfileViewController.xib */; };
+		30B48ABC27E7C4C200521B56 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B48ABB27E7C4C200521B56 /* ChatViewController.swift */; };
+		30B48ABE27E95E5100521B56 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B48ABD27E95E5100521B56 /* StorageManager.swift */; };
 		32B3A36213A36FF9FA98727A /* Pods_VerrazzanoCapstoneProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF83EDD3F8A9DA8284A73E5D /* Pods_VerrazzanoCapstoneProject.framework */; };
 		D6C1F9B289B837251810DE01 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D55613A888736AA2451227 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +91,9 @@
 		3006B2BC27B3A18D00E9F1BC /* VerrazzanoCapstoneProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerrazzanoCapstoneProjectUITests.swift; sourceTree = "<group>"; };
 		3006B2BE27B3A18D00E9F1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3006B2CC27B4876500E9F1BC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		305069AF27EC11D10071CF46 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		305069B127F13F4D0071CF46 /* NewConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationCell.swift; sourceTree = "<group>"; };
+		305069B327F6369B0071CF46 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
 		309DD73B27C98A8E00E44368 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		309DD73D27C98AD800E44368 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
 		309DD73F27C98AFE00E44368 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -107,14 +116,17 @@
 		309DD7B327E168EC00E44368 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
 		309DD7B527E1691300E44368 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		309DD7B727E1693D00E44368 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
-		309DD7B927E1696000E44368 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		309DD7BE27E3C50400E44368 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		309DD7BE27E3C50400E44368 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		309DD7BF27E3C50400E44368 /* MessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
 		309DD7C327E429E700E44368 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		309DD7C527E42A4100E44368 /* DummyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyLoginViewController.swift; sourceTree = "<group>"; };
 		309DD7C727E42CBC00E44368 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30B48AB127E5947300521B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30B48AB327E5A11C00521B56 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		30B48AB727E6795E00521B56 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		30B48AB827E6795E00521B56 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		30B48ABB27E7C4C200521B56 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		30B48ABD27E95E5100521B56 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		4F8D42A5724F7606C8BDB648 /* Pods_VerrazzanoCapstoneProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D55613A888736AA2451227 /* Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProject_VerrazzanoCapstoneProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF83EDD3F8A9DA8284A73E5D /* Pods_VerrazzanoCapstoneProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerrazzanoCapstoneProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +216,8 @@
 				309DD7A127D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld */,
 				309DD7A427D2E5C300E44368 /* DataPersistenceManager.swift */,
 				309DD7C527E42A4100E44368 /* DummyLoginViewController.swift */,
+				30B48AB727E6795E00521B56 /* ProfileViewController.swift */,
+				30B48AB827E6795E00521B56 /* ProfileViewController.xib */,
 			);
 			path = VerrazzanoCapstoneProject;
 			sourceTree = "<group>";
@@ -233,6 +247,7 @@
 				3006B29C27B3A18900E9F1BC /* SceneDelegate.swift */,
 				309DD74B27CC22A600E44368 /* Extensions.swift */,
 				30B48AB327E5A11C00521B56 /* DatabaseManager.swift */,
+				30B48ABD27E95E5100521B56 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -283,12 +298,15 @@
 		309DD7AE27D58DB500E44368 /* MessagesVC */ = {
 			isa = PBXGroup;
 			children = (
-				309DD7BE27E3C50400E44368 /* MessagesViewController.swift */,
+				309DD7BE27E3C50400E44368 /* ConversationsViewController.swift */,
 				309DD7BF27E3C50400E44368 /* MessagesViewController.xib */,
 				309DD7B327E168EC00E44368 /* PhotoViewerViewController.swift */,
 				309DD7B527E1691300E44368 /* VideoPlayerViewController.swift */,
 				309DD7B727E1693D00E44368 /* NewConversationViewController.swift */,
-				309DD7B927E1696000E44368 /* ProfileViewController.swift */,
+				30B48ABB27E7C4C200521B56 /* ChatViewController.swift */,
+				305069AF27EC11D10071CF46 /* ConversationTableViewCell.swift */,
+				305069B127F13F4D0071CF46 /* NewConversationCell.swift */,
+				305069B327F6369B0071CF46 /* LocationPickerViewController.swift */,
 			);
 			path = MessagesVC;
 			sourceTree = "<group>";
@@ -346,6 +364,7 @@
 				3006B29427B3A18900E9F1BC /* Frameworks */,
 				3006B29527B3A18900E9F1BC /* Resources */,
 				9FF857D25C438999FF6BBB92 /* [CP] Embed Pods Frameworks */,
+				59615AA3A08D7F068B4E2C6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -388,6 +407,7 @@
 				3006B2B527B3A18D00E9F1BC /* Frameworks */,
 				3006B2B627B3A18D00E9F1BC /* Resources */,
 				F827C66DFB37E77EC4AA1CF0 /* [CP] Embed Pods Frameworks */,
+				D79E51DB70F7FB4D89303B71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -450,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3006B2A727B3A18C00E9F1BC /* LaunchScreen.storyboard in Resources */,
+				30B48ABA27E6795E00521B56 /* ProfileViewController.xib in Resources */,
 				3006B2A427B3A18C00E9F1BC /* Assets.xcassets in Resources */,
 				309DD7C127E3C50400E44368 /* MessagesViewController.xib in Resources */,
 				309DD7C427E429E700E44368 /* FeedViewController.storyboard in Resources */,
@@ -541,6 +562,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		59615AA3A08D7F068B4E2C6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9FF857D25C438999FF6BBB92 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -556,6 +594,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject/Pods-VerrazzanoCapstoneProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D79E51DB70F7FB4D89303B71 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests/Pods-VerrazzanoCapstoneProject-VerrazzanoCapstoneProjectUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F827C66DFB37E77EC4AA1CF0 /* [CP] Embed Pods Frameworks */ = {
@@ -587,13 +642,16 @@
 				30B48AB427E5A11C00521B56 /* DatabaseManager.swift in Sources */,
 				309DD7B427E168EC00E44368 /* PhotoViewerViewController.swift in Sources */,
 				309DD74A27CC1F1F00E44368 /* MovieTitle.swift in Sources */,
+				305069B027EC11D10071CF46 /* ConversationTableViewCell.swift in Sources */,
 				309DD7B227E168D600E44368 /* RegisterViewController.swift in Sources */,
 				309DD7C827E42CBC00E44368 /* LoginViewController.swift in Sources */,
+				305069B427F6369C0071CF46 /* LocationPickerViewController.swift in Sources */,
 				309DD75D27D04C3200E44368 /* YouTubeSearchResp.swift in Sources */,
 				309DD76127D0551300E44368 /* TrailerViewModel.swift in Sources */,
 				309DD74227C98B2B00E44368 /* FavoritesViewController.swift in Sources */,
 				3006B2CD27B4876500E9F1BC /* FeedViewController.swift in Sources */,
 				309DD74627C9998200E44368 /* MovieHeaderView.swift in Sources */,
+				30B48AB927E6795E00521B56 /* ProfileViewController.swift in Sources */,
 				3006B29B27B3A18900E9F1BC /* AppDelegate.swift in Sources */,
 				309DD74827CC1B2A00E44368 /* MovieAPICaller.swift in Sources */,
 				3006B29D27B3A18900E9F1BC /* SceneDelegate.swift in Sources */,
@@ -601,17 +659,19 @@
 				309DD7B827E1693D00E44368 /* NewConversationViewController.swift in Sources */,
 				309DD7B627E1691300E44368 /* VideoPlayerViewController.swift in Sources */,
 				309DD73E27C98AD800E44368 /* ComingSoonViewController.swift in Sources */,
-				309DD7BA27E1696000E44368 /* ProfileViewController.swift in Sources */,
 				309DD75727CDC9AE00E44368 /* TitleTableViewCell.swift in Sources */,
 				309DD75B27CDD68E00E44368 /* FilterResultsViewController.swift in Sources */,
 				309DD74427C9932D00E44368 /* CollectionTableViewCell.swift in Sources */,
 				309DD75027CC2CEA00E44368 /* TitleCollectionViewCell.swift in Sources */,
-				309DD7C027E3C50400E44368 /* MessagesViewController.swift in Sources */,
+				309DD7C027E3C50400E44368 /* ConversationsViewController.swift in Sources */,
 				309DD7A327D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld in Sources */,
 				309DD75927CDCD1200E44368 /* TitleViewModel.swift in Sources */,
 				309DD73C27C98A8E00E44368 /* MainViewController.swift in Sources */,
 				309DD74C27CC22A600E44368 /* Extensions.swift in Sources */,
 				309DD7A527D2E5C300E44368 /* DataPersistenceManager.swift in Sources */,
+				30B48ABC27E7C4C200521B56 /* ChatViewController.swift in Sources */,
+				30B48ABE27E95E5100521B56 /* StorageManager.swift in Sources */,
+				305069B227F13F4E0071CF46 /* NewConversationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

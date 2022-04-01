@@ -21,26 +21,29 @@ class FeedViewController: UITabBarController {
         view.backgroundColor = .systemBackground
         
         let mainVC = UINavigationController(rootViewController: MainViewController())
-        let comingsoonVC = UINavigationController(rootViewController: ComingSoonViewController())
+        //let comingsoonVC = UINavigationController(rootViewController: ComingSoonViewController())
         let filterVC = UINavigationController(rootViewController: FilterViewController())
         let favoritesVC = UINavigationController(rootViewController: FavoritesViewController())
-        let messagesVC = UINavigationController(rootViewController: MessagesViewController())
+        let messagesVC = UINavigationController(rootViewController: ConversationsViewController())
+        let profileVC = UINavigationController(rootViewController: ProfileViewController())
         
         mainVC.tabBarItem.image = UIImage(systemName: "house")
-        comingsoonVC.tabBarItem.image = UIImage(systemName: "calendar.badge.exclamationmark")
+        //comingsoonVC.tabBarItem.image = UIImage(systemName: "calendar.badge.exclamationmark")
         filterVC.tabBarItem.image = UIImage(systemName: "magnifyingglass.circle")
         favoritesVC.tabBarItem.image = UIImage(systemName: "heart.fill")
         messagesVC.tabBarItem.image = UIImage(systemName: "message.fill")
+        profileVC.tabBarItem.image = UIImage(systemName: "person.circle.fill")
         
         mainVC.title = "Home"
-        comingsoonVC.title = "Coming Soon"
-        filterVC.title = "Find your Movie"
-        favoritesVC.title = "My Favorites"
-        messagesVC.title = "My Messages"
+        //comingsoonVC.title = "Coming Soon"
+        filterVC.title = "Search"
+        favoritesVC.title = "Favorites"
+        messagesVC.title = "Chats"
+        profileVC.title = "Profile"
         
         tabBar.tintColor = .label
         
-        setViewControllers([mainVC, comingsoonVC, filterVC, favoritesVC, messagesVC], animated: true)
+        setViewControllers([mainVC, filterVC, favoritesVC, messagesVC, profileVC], animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,7 +58,7 @@ class FeedViewController: UITabBarController {
             let vc = LoginViewController()
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
-            present(nav, animated: true)
+            present(nav, animated: false)
         }
     }
     

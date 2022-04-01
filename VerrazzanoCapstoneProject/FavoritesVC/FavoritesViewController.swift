@@ -76,8 +76,8 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
 
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
-        title = "My Favorites"
         view.addSubview(favoriteTable)
+        title = "My Favorites"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         
