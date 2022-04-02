@@ -46,7 +46,6 @@
 		309DD7C027E3C50400E44368 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7BE27E3C50400E44368 /* ConversationsViewController.swift */; };
 		309DD7C127E3C50400E44368 /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309DD7BF27E3C50400E44368 /* MessagesViewController.xib */; };
 		309DD7C427E429E700E44368 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309DD7C327E429E700E44368 /* FeedViewController.storyboard */; };
-		309DD7C627E42A4100E44368 /* DummyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7C527E42A4100E44368 /* DummyLoginViewController.swift */; };
 		309DD7C827E42CBC00E44368 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DD7C727E42CBC00E44368 /* LoginViewController.swift */; };
 		30B48AB227E5947300521B56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B48AB127E5947300521B56 /* GoogleService-Info.plist */; };
 		30B48AB427E5A11C00521B56 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B48AB327E5A11C00521B56 /* DatabaseManager.swift */; };
@@ -119,7 +118,6 @@
 		309DD7BE27E3C50400E44368 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		309DD7BF27E3C50400E44368 /* MessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
 		309DD7C327E429E700E44368 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
-		309DD7C527E42A4100E44368 /* DummyLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyLoginViewController.swift; sourceTree = "<group>"; };
 		309DD7C727E42CBC00E44368 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30B48AB127E5947300521B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30B48AB327E5A11C00521B56 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -192,6 +190,8 @@
 		3006B29927B3A18900E9F1BC /* VerrazzanoCapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				305069B627F7C8D20071CF46 /* View Cells */,
+				305069B527F7C8420071CF46 /* Profile */,
 				30B48AB127E5947300521B56 /* GoogleService-Info.plist */,
 				302053D827E43EBB00F240FA /* Resources */,
 				309DD7C227E426AF00E44368 /* Main Feed */,
@@ -206,18 +206,7 @@
 				3006B2A327B3A18C00E9F1BC /* Assets.xcassets */,
 				3006B2A527B3A18C00E9F1BC /* LaunchScreen.storyboard */,
 				3006B2A827B3A18C00E9F1BC /* Info.plist */,
-				309DD74327C9932D00E44368 /* CollectionTableViewCell.swift */,
-				309DD74727CC1B2A00E44368 /* MovieAPICaller.swift */,
-				309DD74927CC1F1F00E44368 /* MovieTitle.swift */,
-				309DD74F27CC2CEA00E44368 /* TitleCollectionViewCell.swift */,
-				309DD75627CDC9AE00E44368 /* TitleTableViewCell.swift */,
-				309DD75C27D04C3100E44368 /* YouTubeSearchResp.swift */,
-				309DD75E27D0513800E44368 /* TrailerViewController.swift */,
 				309DD7A127D2E3A800E44368 /* CapstoneProjectModel.xcdatamodeld */,
-				309DD7A427D2E5C300E44368 /* DataPersistenceManager.swift */,
-				309DD7C527E42A4100E44368 /* DummyLoginViewController.swift */,
-				30B48AB727E6795E00521B56 /* ProfileViewController.swift */,
-				30B48AB827E6795E00521B56 /* ProfileViewController.xib */,
 			);
 			path = VerrazzanoCapstoneProject;
 			sourceTree = "<group>";
@@ -243,13 +232,34 @@
 		302053D827E43EBB00F240FA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				309DD74727CC1B2A00E44368 /* MovieAPICaller.swift */,
 				3006B29A27B3A18900E9F1BC /* AppDelegate.swift */,
 				3006B29C27B3A18900E9F1BC /* SceneDelegate.swift */,
 				309DD74B27CC22A600E44368 /* Extensions.swift */,
 				30B48AB327E5A11C00521B56 /* DatabaseManager.swift */,
 				30B48ABD27E95E5100521B56 /* StorageManager.swift */,
+				309DD7A427D2E5C300E44368 /* DataPersistenceManager.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		305069B527F7C8420071CF46 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				30B48AB727E6795E00521B56 /* ProfileViewController.swift */,
+				30B48AB827E6795E00521B56 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		305069B627F7C8D20071CF46 /* View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				309DD75627CDC9AE00E44368 /* TitleTableViewCell.swift */,
+				309DD74F27CC2CEA00E44368 /* TitleCollectionViewCell.swift */,
+				309DD74327C9932D00E44368 /* CollectionTableViewCell.swift */,
+			);
+			path = "View Cells";
 			sourceTree = "<group>";
 		};
 		309DD7A927D5898B00E44368 /* MainVC */ = {
@@ -257,6 +267,7 @@
 			children = (
 				309DD74527C9998200E44368 /* MovieHeaderView.swift */,
 				309DD73B27C98A8E00E44368 /* MainViewController.swift */,
+				309DD75E27D0513800E44368 /* TrailerViewController.swift */,
 			);
 			path = MainVC;
 			sourceTree = "<group>";
@@ -289,6 +300,8 @@
 		309DD7AD27D58AC300E44368 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				309DD74927CC1F1F00E44368 /* MovieTitle.swift */,
+				309DD75C27D04C3100E44368 /* YouTubeSearchResp.swift */,
 				309DD75827CDCD1200E44368 /* TitleViewModel.swift */,
 				309DD76027D0551300E44368 /* TrailerViewModel.swift */,
 			);
@@ -365,6 +378,7 @@
 				3006B29527B3A18900E9F1BC /* Resources */,
 				9FF857D25C438999FF6BBB92 /* [CP] Embed Pods Frameworks */,
 				59615AA3A08D7F068B4E2C6B /* [CP] Copy Pods Resources */,
+				305069B727F7CB030071CF46 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -518,6 +532,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		305069B727F7CB030071CF46 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		32F3F3299F942EB036277E9C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,7 +669,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				309DD74027C98AFE00E44368 /* FilterViewController.swift in Sources */,
-				309DD7C627E42A4100E44368 /* DummyLoginViewController.swift in Sources */,
 				30B48AB427E5A11C00521B56 /* DatabaseManager.swift in Sources */,
 				309DD7B427E168EC00E44368 /* PhotoViewerViewController.swift in Sources */,
 				309DD74A27CC1F1F00E44368 /* MovieTitle.swift in Sources */,
