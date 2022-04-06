@@ -11,18 +11,8 @@ import FBSDKLoginKit
 import GoogleSignIn
 import SDWebImage
 
-enum ProfileViewModelType {
-    case info, logout
-}
-
-struct ProfileViewModel {
-    let viewModelType: ProfileViewModelType
-    let title: String
-    let handler: (() -> Void)?
-}
-
 @available(iOS 15.0, *)
-class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+final class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //@IBOutlet weak var profileTableView: UIprofileTableView!
     @IBOutlet weak var profileTableView: UITableView!
@@ -142,11 +132,11 @@ class ProfileTableViewCell: UITableViewCell {
         self.textLabel?.text = viewModel.title
         switch viewModel.viewModelType {
         case .info:
-            self.textLabel?.textAlignment = .left
-            self.selectionStyle = .none
+            textLabel?.textAlignment = .left
+            selectionStyle = .none
         case .logout:
-            self.textLabel?.textColor = .red
-            self.textLabel?.textAlignment = .center
+            textLabel?.textColor = .red
+            textLabel?.textAlignment = .center
         }
     }
 }

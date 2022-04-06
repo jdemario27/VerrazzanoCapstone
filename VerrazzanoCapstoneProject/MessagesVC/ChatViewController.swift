@@ -16,59 +16,7 @@ import AVFoundation
 import AVKit
 import CoreLocation
 
-struct Message: MessageType {
-   public var sender: SenderType
-   public var messageId: String
-   public var sentDate: Date
-   public var kind: MessageKind
-}
-
-struct Location: LocationItem {
-    var location: CLLocation
-    var size: CGSize
-}
-
-extension MessageKind {
-    var messageKindString: String {
-        switch self {
-        case .text(_):
-            return "text"
-        case .attributedText(_):
-            return "attributed_text"
-        case .photo(_):
-            return "photo"
-        case .video(_):
-            return "video"
-        case .location(_):
-            return "location"
-        case .emoji(_):
-            return "emoji"
-        case .audio(_):
-            return "audio"
-        case .contact(_):
-            return "contact"
-        case .linkPreview(_):
-            return "link_preview"
-        case .custom(_):
-            return "customc"
-        }
-    }
-}
-
-struct Sender: SenderType {
-   public var photoURL: String
-   public var senderId: String
-   public var displayName: String
-}
-
-struct Media: MediaItem {
-    var url: URL?
-    var image: UIImage?
-    var placeholderImage: UIImage
-    var size: CGSize
-}
-
-class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate {
+final class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate {
     
     private var senderPhotoURL: URL?
     private var otherUserPhotoURL: URL?
@@ -562,6 +510,7 @@ extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, Messag
         case .location(let locationData):
             let coordinates = locationData.location.coordinate
             let vc = LocationPickerViewController(coordinates: coordinates)
+            
             vc.title = "Location"
             self.navigationController?.pushViewController(vc, animated: true)
         default:
@@ -582,7 +531,7 @@ extension ChatViewController: MessagesDataSource, MessagesLayoutDelegate, Messag
                 return
             }
             let vc = PhotoViewerViewController(with: imageUrl)
-            self.navigationController?.pushViewController(vc, animated: true)
+            navigationController?.pushViewController(vc, animated: true)
         case .video(let media):
             guard let videoUrl = media.url else {
                 return

@@ -14,7 +14,7 @@ import JGProgressHUD
 import AlamofireImage
 
 @available(iOS 15.0, *)
-class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
+final class LoginViewController: UIViewController, UITextFieldDelegate, LoginButtonDelegate {
     
     private let spinner = JGProgressHUD(style: .dark)
     

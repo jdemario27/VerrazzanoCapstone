@@ -10,7 +10,7 @@ import FirebaseAuth
 import JGProgressHUD
 
 @available(iOS 15.0, *)
-class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+final class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     private let spinner = JGProgressHUD(style: .dark)
     
@@ -264,7 +264,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate, UIImagePick
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         guard let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else { return }
-        self.imageView.image = selectedImage
+        imageView.image = selectedImage
     }
 
     func presentPhotoActionSheet() {
