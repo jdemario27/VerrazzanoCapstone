@@ -1,7 +1,7 @@
 # Senior Capstone Project - Groupvie
 An iOS application that combines the ideas of social media apps like Tinder and Instagram into a place where users can talk to each other based on movie preferences.  
 
-## Features 
+## User Stories  
 - Google Sign In
 - Facebook Sign In
 - Email & Password Registration and Log In
