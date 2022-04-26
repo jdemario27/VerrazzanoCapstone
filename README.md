@@ -14,5 +14,11 @@ An iOS application that combines the ideas of social media apps like Tinder and 
 - Users can view their profile 
 - iOS app supports Dark Mode
 
+## Work In Progress 
+- Refine the matching algorithm to connect users based on their movie interests automatically
+- Extend the capability of the chats screen to group messages rather than a single user
+- Finish development on Events page for users to set up watch parties and movie nights with each other
+- Improve the UI by making the design more consistent
+
 ### App Walkthough GIF
 <img src="http://g.recordit.co/gOGRgNXX3n.gif" width=300><br>
