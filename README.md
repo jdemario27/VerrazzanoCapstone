@@ -13,3 +13,6 @@ An iOS application that combines the ideas of social media apps like Tinder and 
 - Users can add a movie to their favorites list
 - Users can view their profile 
 - iOS app supports Dark Mode
+
+### App Walkthough GIF
+<img src="http://g.recordit.co/gOGRgNXX3n.gif" width=300><br>
